@@ -1,2 +1,18 @@
-# cgan-mnist-dcgan
-A Conditional Generative Adversarial Network (CGAN) implementation using the DCGAN architecture on the MNIST dataset. Trains a convolutional generator and discriminator in an adversarial setup to create realistic handwritten digits conditioned on class labels.
+# CGAN on MNIST (DCGAN Architecture)
+
+A Conditional Generative Adversarial Network (CGAN) built using the DCGAN architecture to generate handwritten digits from the MNIST dataset conditioned on class labels.
+
+## How It Works
+- **Generator**: Creates fake MNIST images based on random noise + labels.
+- **Discriminator**: Classifies images as real or fake, using both image and label.
+- Trained alternately to improve both networks in an adversarial loop.
+
+## Requirements
+```bash
+pip install torch torchvision matplotlib numpy
+Run
+git clone https://github.com/<your-username>/cgan-mnist-dcgan.git
+cd cgan-mnist-dcgan
+python train.py
+
+
